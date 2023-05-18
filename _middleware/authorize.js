@@ -1,3 +1,4 @@
+//This file implements middleware functions for JWT authentication. It verifies the JWT token sent in the request header and attaches the authenticated user's information to the request object.
 const jwt = require('express-jwt');
 
 const { secret } = require('config.json');

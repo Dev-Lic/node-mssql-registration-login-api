@@ -1,4 +1,7 @@
-﻿const jwt = require('jsonwebtoken');
+﻿
+//This file contains the service logic for interacting with the user model and performing operations such as creating new users, finding users by username, and updating user records.
+
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 const { secret } = require('config.json');

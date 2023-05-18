@@ -1,4 +1,6 @@
-﻿const express = require('express');
+﻿//This file defines the controller logic for handling user-related operations. It includes functions for user registration, authentication, and retrieving user details.
+//Containes Routes too
+const express = require('express');
 const router = express.Router();
 const Joi = require('joi');
 

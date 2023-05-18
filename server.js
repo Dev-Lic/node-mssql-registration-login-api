@@ -1,7 +1,11 @@
-﻿require('rootpath')();
+﻿//This file serves as the entry point for the application. It sets up the Express server, establishes a connection to the SQL Server database, and defines the API routes.
+
+
+require('rootpath')();
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const routes = require('./users/users.controller');
 
 const errorHandler = require('_middleware/error-handler');
 
@@ -10,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // api routes
-app.use('/users', require('./users/users.controller'));
+app.use('/users', routes);
 
 // global error handler
 app.use(errorHandler);

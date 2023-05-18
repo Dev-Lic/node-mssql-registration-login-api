@@ -1,3 +1,7 @@
+//This file defines the user model, specifying the structure and schema for user data in the database.
+
+
+
 const { DataTypes } = require('sequelize');
 
 module.exports = model;
